@@ -1,0 +1,210 @@
+.ranchers-regular {
+  font-family: "Ranchers", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dynapuff-regular {
+  font-family: "DynaPuff", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #A9D8F2;
+  border-color: #D9D5EB;
+  padding: 10px 20px;
+  color: black;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(80, 140, 180, 0.18);
+}
+
+.navbar-icon {
+  width: 50px;
+  height: 60px;
+  margin-left: 20px;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  color: black;
+  background-image: url('Cloud background.png');
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: Ranchers, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  width: 300px;
+  gap: 10px;
+}
+
+.book-categories {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.book-card {
+  flex: 1; /* fills available horizontal space */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* exactly 3 columns */
+  gap: 30px; /* gap between cards horizontally and vertically */
+  justify-content: start; /* align grid to left */
+}
+
+.card {
+  width: 250px;
+  background: #F4EFE7;
+  border-color: #D9D5EB;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.card h4 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #333;
+}
+
+#right-side-wrapper {
+  position: absolute;
+  top: 130px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 320px;
+}
+
+#book-count-container,
+#form-container {
+  background-color: #EAE4D8;
+  padding: 12px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.page-container {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start; /* top align */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#bookForm {
+  flex: 0 0 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 0 8px 25px rgba(80, 140, 180, 0.15);
+  border-radius: 18px;
+}
+
+#bookForm label {
+  font-weight: bold;
+}
+
+#bookForm input {
+  padding: 10px;
+  font-size: 14px;
+  background-color: #F0F8FF;
+  border-radius: 6px;
+}
+
+#submit {
+  margin-top: 10px;
+  padding: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 20px;
+  background-color: #8FB9D3;
+}
+
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 700px; /* or your preferred width */
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.header-container {
+  padding: 12px 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  margin-top: 5px;
+  margin-left: 20px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  font-weight: 600;
+  font-style: "DynaPuff", system-ui;
+  font-size: 1.25rem;
+  max-width: 300px;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.books-collection-container {
+  padding: 12px 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  margin-top: 5px;
+  margin-right: 20px;
+  margin-bottom: 16px;
+  margin-left: auto;  /* push to the right */
+  max-width: 600px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.25rem;
+  width: fit-content;
+}
