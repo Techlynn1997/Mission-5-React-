@@ -67,7 +67,7 @@ export default function Books() {
     },
   ]);
 
-  const genres = Array.from(new Set(books.map((book) => book.genre)));
+  const genres = Array.from(new Set(books.map((book) => book.genre))); 
 
   function handleTitleChange(e) {
     setTitle(e.target.value);
