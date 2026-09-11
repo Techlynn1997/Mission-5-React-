@@ -126,7 +126,7 @@ export default function Books() {
   return (
     <>
       <Navbar />
-      <div className="top-row">
+      <div className="top-row"> /*for styling only*/
         <div className="header-container">
           <label htmlFor="genreSelect">Books genre: </label>
           <select
