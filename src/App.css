@@ -129,13 +129,14 @@ h1 {
   background-color: #eae4d8;
   padding: 12px 20px;
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2pxl
+  6px rgba(0, 0, 0, 0.1);
 }
 
 .page-container {
   display: flex;
   gap: 20px;
-  align-items: flex-start; /* top align */
+  align-items: flex-start;
   padding: 20px;
   box-sizing: border-box;
 }
@@ -183,6 +184,7 @@ h1 {
   cursor: pointer;
   user-select: none;
   font-weight: 600;
+  font-size: 16px;
   text-align: center;
 }
 .custom-file-label:hover {
@@ -198,7 +200,7 @@ h1 {
   cursor: pointer;
   user-select: none;
   font-weight: 600;
-  font-size: 14px;                
+  font-size: 16px;                
   box-sizing: border-box; 
   border: none;
 }
