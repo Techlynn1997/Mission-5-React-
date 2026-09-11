@@ -24,18 +24,6 @@ export default function Books() {
       rating: 5,
     },
     {
-      image: "I Will Teach You To Be Rich.jpg",
-      title: "I Will Teach You To Be Rich",
-      genre: "Personal finance",
-      rating: 5,
-    },
-    {
-      image: "The Essentialism.jpg",
-      title: "The Essentialism",
-      genre: "Self-help",
-      rating: 4,
-    },
-    {
       image: "Atomic Habits.png",
       title: "Atomic Habits",
       genre: "Self-help",
@@ -46,18 +34,6 @@ export default function Books() {
       title: "The Alchemist",
       genre: "Philosophy",
       rating: 5,
-    },
-    {
-      image: "The Courage to Be Disliked.jpg",
-      title: "The Courage To Be Disliked",
-      genre: "Philosophy",
-      rating: 4,
-    },
-    {
-      image: "Man's Searching for Meaning.jpg",
-      title: "Man's Searching For Meaning",
-      genre: "Philosophy",
-      rating: 3,
     },
     {
       image: "Reclaim your heart.jpeg",
