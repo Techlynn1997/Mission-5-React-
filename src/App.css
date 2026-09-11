@@ -165,20 +165,53 @@ h1 {
   border-radius: 6px;
 }
 
-#submit {
-  margin-top: 10px;
-  padding: 8px;
-  font-weight: bold;
-  cursor: pointer;
-  border-radius: 20px;
+#bookForm input[type="file"] {
+  opacity: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.custom-file-label {
+  display: inline-block;
+  padding: 8px 12px;
   background-color: #8fb9d3;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  user-select: none;
+  font-weight: 600;
+  text-align: center;
+}
+.custom-file-label:hover {
+  background-color: #6a8fb8;
+}
+
+#submit {
+  display: inline-block;
+  padding: 8px 12px;       
+  background-color: #8fb9d3;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  user-select: none;
+  font-weight: 600;
+  font-size: 14px;                
+  box-sizing: border-box; 
+  border: none;
+}
+
+#submit:hover {
+  background-color: #6a8fb8;
 }
 
 .top-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 700px; /* or your preferred width */
+  max-width: 700px;
   margin-left: 20px;
   margin-top: 20px;
 }

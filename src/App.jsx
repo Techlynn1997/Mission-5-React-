@@ -22,52 +22,54 @@ export default function Books() {
     {
       image: "The Psychology of Money.jpg",
       title: "The Psychology of Money",
-      category: "Personal finance",
+      genre: "Personal finance",
       rating: 4.5,
     },
     {
       image: "I Will Teach You To Be Rich.jpg",
       title: "I Will Teach You To Be Rich",
-      category: "Personal finance",
+      genre: "Personal finance",
       rating: 4.8,
     },
     {
       image: "The Essentialism.jpg",
       title: "The Essentialism",
-      category: "Self-help",
+      genre: "Self-help",
       rating: 4.2,
     },
     {
       image: "Atomic Habits.png",
       title: "Atomic Habits",
-      category: "Self-help",
+      genre: "Self-help",
       rating: 4.6,
     },
     {
       image: "The Alchemist.jpg",
       title: "The Alchemist",
-      category: "Philosophy",
+      genre: "Philosophy",
       rating: 4.7,
     },
     {
       image: "The Courage to Be Disliked.jpg",
       title: "The Courage To Be Disliked",
-      category: "Philosophy",
+      genre: "Philosophy",
       rating: 4.4,
     },
     {
       image: "Man's Searching for Meaning.jpg",
       title: "Man's Searching For Meaning",
-      category: "Philosophy",
+      genre: "Philosophy",
       rating: 4.9,
     },
     {
       image: "Reclaim your heart.jpeg",
       title: "Reclaim your heart",
-      category: "Spirituality",
+      genre: "Spirituality",
       rating: 4.3,
     },
   ]);
+
+  const genres = Array.from(new Set(books.map((book) => book.genre)));
 
   function handleTitleChange(e) {
     setTitle(e.target.value);
@@ -120,7 +122,7 @@ export default function Books() {
   }
 
   const filteredBooks = filterGenre
-    ? books.filter((book) => book.category === filterGenre)
+    ? books.filter((book) => book.genre === filterGenre)
     : books;
 
   return (
@@ -134,10 +136,12 @@ export default function Books() {
             value={filterGenre}
             onChange={(e) => setFilterGenre(e.target.value)}
           >
-            <option value="Self-help">Self-help</option>
-            <option value="Personal finance">Personal finance</option>
-            <option value="Philosophy">Philosophy</option>
-            <option value="Spirituality">Spirituality</option>
+            <option value="">All genres</option>
+            {genres.map((g) => (
+              <option key={g} value={g}>
+                {g}
+              </option>
+            ))}
           </select>
         </div>
 
@@ -182,7 +186,9 @@ export default function Books() {
             max="5"
             step="1"
           />
-          <label htmlFor="image">Image:</label>
+          <label htmlFor="image" className="custom-file-label">
+            Choose image
+          </label>
           <input
             type="file"
             id="image"
@@ -190,6 +196,7 @@ export default function Books() {
             accept="image/*"
             onChange={handleImageChange}
           />
+
           <button id="submit" type="submit">
             Add books
           </button>
