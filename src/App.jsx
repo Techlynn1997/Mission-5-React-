@@ -210,7 +210,7 @@ function Book({ image, title, genre, rating }) {
       <img src={image} alt={title} />
       <h4>{title}</h4>
       <p>{genre}</p>
-      Rating: {rating} {renderStars(Math.round(rating))}
+      Rating: {Math.round(rating)} {renderStars(Math.round(rating))}
     </div>
   );
 }
