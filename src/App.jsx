@@ -15,55 +15,55 @@ export default function Books() {
   const [genre, setGenre] = useState("");
   const [rating, setRating] = useState("");
   const [imageFile, setImageFile] = useState(null);
-  const [filterGenre, setFilterGenre] = useState(""); 
+  const [filterGenre, setFilterGenre] = useState("");
   const [books, setBooks] = useState([
     {
       image: "The Psychology of Money.jpg",
       title: "The Psychology of Money",
       genre: "Personal finance",
-      rating: 4.5,
+      rating: 5,
     },
     {
       image: "I Will Teach You To Be Rich.jpg",
       title: "I Will Teach You To Be Rich",
       genre: "Personal finance",
-      rating: 4.8,
+      rating: 5,
     },
     {
       image: "The Essentialism.jpg",
       title: "The Essentialism",
       genre: "Self-help",
-      rating: 4.2,
+      rating: 4,
     },
     {
       image: "Atomic Habits.png",
       title: "Atomic Habits",
       genre: "Self-help",
-      rating: 4.6,
+      rating: 4,
     },
     {
       image: "The Alchemist.jpg",
       title: "The Alchemist",
       genre: "Philosophy",
-      rating: 4.7,
+      rating: 5,
     },
     {
       image: "The Courage to Be Disliked.jpg",
       title: "The Courage To Be Disliked",
       genre: "Philosophy",
-      rating: 4.4,
+      rating: 4,
     },
     {
       image: "Man's Searching for Meaning.jpg",
       title: "Man's Searching For Meaning",
       genre: "Philosophy",
-      rating: 4.9,
+      rating: 3,
     },
     {
       image: "Reclaim your heart.jpeg",
       title: "Reclaim your heart",
       genre: "Spirituality",
-      rating: 4.3,
+      rating: 5,
     },
   ]);
 
