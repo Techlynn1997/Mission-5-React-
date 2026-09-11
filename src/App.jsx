@@ -13,7 +13,6 @@ export function Navbar() {
 
 export default function Books() {
   const [title, setTitle] = useState("");
-  const [categories, setCategories] = useState("");
   const [genre, setGenre] = useState("");
   const [rating, setRating] = useState("");
   const [imageFile, setImageFile] = useState(null);
@@ -73,9 +72,6 @@ export default function Books() {
   function handleTitleChange(e) {
     setTitle(e.target.value);
   }
-  function handleCategoriesChange(e) {
-    setCategories(e.target.value);
-  }
   function handleGenreChange(e) {
     setGenre(e.target.value);
   }
@@ -90,7 +86,7 @@ export default function Books() {
   function handleSubmit(e) {
     e.preventDefault();
 
-    if (!title || !categories || !genre || !rating || !imageFile) {
+    if (!title || !genre || !rating || !imageFile) {
       alert("Please fill in all fields before adding a book.");
       return;
     }
@@ -109,7 +105,6 @@ export default function Books() {
     const newBook = {
       image: imageURL,
       title,
-      category: categories,
       genre,
       rating: Number(rating),
     };
@@ -117,7 +112,6 @@ export default function Books() {
     setBooks([...books, newBook]);
 
     setTitle("");
-    setCategories("");
     setGenre("");
     setRating("");
     setImageFile(null);
@@ -168,14 +162,6 @@ export default function Books() {
             value={title}
             onChange={handleTitleChange}
           />
-          <label htmlFor="categories">Categories:</label>
-          <input
-            type="text"
-            id="categories"
-            name="categories"
-            value={categories}
-            onChange={handleCategoriesChange}
-          />
 
           <label htmlFor="genre">Genre:</label>
           <input
@@ -213,12 +199,11 @@ export default function Books() {
   );
 }
 
-function Book({ image, title, category, genre, rating }) {
+function Book({ image, title, genre, rating }) {
   return (
     <div className="card">
       <img src={image} alt={title} />
       <h4>{title}</h4>
-      <p>{category}</p>
       <p>{genre}</p>
       Rating: {rating} {renderStars(Math.round(rating))}
     </div>
