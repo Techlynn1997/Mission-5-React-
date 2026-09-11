@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./index.css";
 import "./App.css";
 
 export function Navbar() {
@@ -16,8 +15,7 @@ export default function Books() {
   const [genre, setGenre] = useState("");
   const [rating, setRating] = useState("");
   const [imageFile, setImageFile] = useState(null);
-  const [filterGenre, setFilterGenre] = useState("");
-
+  const [filterGenre, setFilterGenre] = useState(""); 
   const [books, setBooks] = useState([
     {
       image: "The Psychology of Money.jpg",
