@@ -24,6 +24,12 @@ export default function Books() {
       rating: 5,
     },
     {
+      image: "The Alchemist.jpg",
+      title: "The Alchemist",
+      genre: "Philosophy",
+      rating: 5,
+    },
+    {
       image: "Reclaim your heart.jpeg",
       title: "Reclaim your heart",
       genre: "Spirituality",
