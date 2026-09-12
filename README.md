@@ -2,7 +2,7 @@
 
 Bookshelf project with React.
 
-![Bookshelf Screenshot](./src/assets/screenshot5.png)
+![Bookshelf Screenshot](./src/assets/Screenshot m5.jpg)
 
 ## Features
 
